@@ -1,16 +1,12 @@
 import './App.css'
-import { FadeIn } from './components/FadeIn'
-import { RootLayout } from './components/RootLayout'
 import Landing from './screens/Landing'
+import Progress from './screens/Progress'
 
 function App() {
   return (
-    <div className='w-screen h-screen overflow-auto scrollbar-hide bg-gray-800' >
-    <FadeIn className=" z-10 grid">
-    <RootLayout>
-      <Landing/>    
-    </RootLayout>
-    </FadeIn>
+    <div className='w-screen h-screen overflow-auto scrollbar-hide bg-gray-800'   >
+      <Landing/> 
+    <Progress />
     </div>
   
   )
