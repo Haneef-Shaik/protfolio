@@ -61,6 +61,9 @@ function RootLayout({ children }) {
 
 
 export default function Progress() {
+
+  
+
   return (
   <RootLayout>
         <div className='w-full min-h-screen grid items-center ' >

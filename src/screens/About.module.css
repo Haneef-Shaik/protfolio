@@ -1,0 +1,32 @@
+.neomorpichBox{
+    background: #262626;
+    box-shadow: inset -5px 5px 10px #0f0f0f,
+                inset 5px -5px 10px #3d3d3d;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+  .card_rotator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 200%;
+    /* background: linear-gradient(90deg, transparent, rgba(52,130,246,1) 0%, rgba(115,169,249,1) 32%, rgba(162,198,251,1) 78%, transparent); */
+    background: linear-gradient(90deg, transparent,rgba(255, 255, 255, 0.505), transparent);
+    animation: line_rotation_360 10000ms linear infinite;
+    animation-direction:reverse
+  }
+
+  @keyframes line_rotation_360 {
+    100% {
+      transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+    0% {
+      transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+  }
