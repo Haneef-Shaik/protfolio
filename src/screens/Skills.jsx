@@ -99,7 +99,7 @@ export default function Skills() {
           {techStack?.map((o,i)=>{
             return (
             <FadeIn key={i} className="sticky  grid">
-            <div className={`${styles.stackbox}  ${o?.id ===10 ? "sm:hidden md:block" : ""} text-white grid gap-1 place-content-center text-center` }   >
+            <div className={`${styles.stackbox}  ${o?.id ===10 ? "hidden md:block" : ""} text-white grid gap-1 place-content-center text-center` }   >
             <Tooltip placement="top" title={o?.name}  >
             {o?.icon}
             </Tooltip>
