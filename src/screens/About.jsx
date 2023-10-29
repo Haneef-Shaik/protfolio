@@ -5,9 +5,9 @@ import styles from  "./About.module.css"
 export default function About() {
 
   return(
-  <div className="w-full min-h-screen bg-[#262626] grid md:grid-cols-2 ">
+    <div className="w-full min-h-screen bg-[#262626] grid md:grid-cols-2 ">
+    <FadeIn>
     <div className="grid items-center p-4 " >
-
       <div className="min-h-[500px] h-[80%] relative overflow-hidden rounded-xl" >
         <div className={`${styles.card_rotator} `} ></div>
       <div className={`${styles.neomorpichBox} absolute h-[99%] w-[99%] p-4 rounded-xl flex flex-col gap-6`} >
@@ -25,6 +25,7 @@ With expertise spanning the development stack, from backend to user interfaces, 
       </div>
 
     </div>
+    </FadeIn>
   </div>
   )
 }

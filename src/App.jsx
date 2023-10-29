@@ -32,7 +32,7 @@ function App() {
     };
   }, []);
   return (
-    <div className='mainPage w-screen h-screen overflow-auto scrollbar-hide bg-gray-800' ref={scrollRef}  >
+    <div className='mainPage w-screen h-screen overflow-auto scrollbar-hide bg-[#262626]' ref={scrollRef}  >
       <Landing/> 
       <About />
       <Skills />
