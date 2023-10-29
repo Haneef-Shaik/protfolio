@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       dropShadow: {
-        '3xl-blue': '1px 1px 4px rgb(59,130,246)',
+        'sm-black': '1px 1px 1px #000',
+        'sm-white': '-1px 1px 2px #ccc',
       }
     },
   },

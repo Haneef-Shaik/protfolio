@@ -3,6 +3,7 @@ import './App.css'
 import About from './screens/About'
 import Landing from './screens/Landing'
 import Progress from './screens/Progress'
+import Skills from './screens/Skills';
 
 function App() {
   const scrollRef = useRef(null);
@@ -34,8 +35,8 @@ function App() {
     <div className='mainPage w-screen h-screen overflow-auto scrollbar-hide bg-gray-800' ref={scrollRef}  >
       <Landing/> 
       <About />
-    <Progress />
-
+      <Skills />
+      <Progress />
     </div>
   
   )

@@ -1,0 +1,52 @@
+.neomorpichBoxOut{
+  background: #262626;
+  box-shadow:  7px 7px 14px #3d3d3d,
+               -7px -7px 14px #0a0a0f;
+    color: white;
+   
+}    
+
+.neomorpichBox{
+  background: #222;
+  box-shadow: inset 7px 7px 14px #0a0a0f,
+              inset -7px -7px 14px #3d3d3d;
+    color: white;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+  .stackname{
+    visibility: hidden;
+  }
+  .stackbox , .stackname{
+    transition: 0.3s;
+  }
+  .stackbox:hover .stackname{
+    visibility: visible;
+  }
+
+  .heading{
+    color: #000;
+    background: -webkit-linear-gradient(0deg,#fff, #111);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    animation: headingAni 5000ms linear infinite reverse;
+  }
+
+
+  @keyframes headingAni {
+    0% {
+      background: -webkit-linear-gradient(0deg,#fff, #111);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    
+    }
+    100% {
+      background: -webkit-linear-gradient(0deg,#111, #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    
+    }
+  }
