@@ -82,7 +82,7 @@ export default function Skills() {
     },
     {
       id:14,
-      name:"Mongo Db",
+      name:"My SQL",
       className:"text-cyan-800",
       icon:<IconMysql  width="5.1rem" fill="#cccccc" className="bg-[#ccc] stroke-[#212121] p-4 rounded-full hover:bg-cyan-800 hover:stroke-[#ccc]"   />
     },
