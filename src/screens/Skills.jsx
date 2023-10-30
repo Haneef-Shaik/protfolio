@@ -91,15 +91,15 @@ export default function Skills() {
 
   return(
   <div className="sticky w-full min-h-screen  bg-[#262626]  grid items-center justify-center py-6 xl:py-12">
-    <div className={`relative  p-6  text-white ${styles.neomorpichBoxOut} grid items-center justify-center rounded-3xl `}  >
+    <div className={`relative p-2 sm:p-4 md:p-6  text-white ${styles.neomorpichBoxOut} grid items-center justify-center rounded-3xl `}  >
     <div className={` min-w-[90vw] md:min-w-[80vw] p-6 text-white ${styles.neomorpichBox} rounded-xl`}  >
     <div className="relative h-full flex flex-col" >
     <div className={`text-center text-3xl md:text-6xl font-bold  ${styles.heading}`} > Skills</div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 py-6 items-center place-content-center h-full" >
           {techStack?.map((o,i)=>{
             return (
-            <FadeIn key={i} className="sticky  grid">
-            <div className={`${styles.stackbox}  ${o?.id ===10 ? "hidden md:block" : ""} text-white grid gap-1 place-content-center text-center` }   >
+            <FadeIn key={i} className={`sticky ${o?.id ===10 ? "hidden md:block" : ""}`}>
+            <div className={`${styles.stackbox}  text-white grid gap-1 place-content-center text-center` }   >
             <Tooltip placement="top" title={o?.name}  >
             {o?.icon}
             </Tooltip>
