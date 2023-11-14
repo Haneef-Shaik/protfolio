@@ -12,7 +12,7 @@ function App() {
     const scrollingDiv = scrollRef.current;
     const handleScroll = (event) => {
       event.preventDefault();
-      const scrollAmount = 0.85; // Adjust this value for your desired scroll speed
+      const scrollAmount = 0.95; // Adjust this value for your desired scroll speed
 
       // Calculate the amount to scroll
       const scrollIncrement = event.deltaY * scrollAmount;

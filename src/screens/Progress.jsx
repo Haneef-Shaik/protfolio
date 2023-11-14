@@ -65,12 +65,15 @@ export default function Progress() {
   
 
   return (
-  <RootLayout>
-        <div className='w-full min-h-screen grid items-center ' >
+    <RootLayout>
+      <div className="w-full min-h-screen grid items-center ">
         <FadeIn className="sticky  grid">
-      <div className='text-[5vw] text-center text-white font-bold' > Something Great in Progress ...</div>    
+          <div className="text-[5vw] text-center text-white font-bold">
+            {" "}
+            Something Great in Progress ...
+          </div>
         </FadeIn>
-    </div>
-  </RootLayout>
-)
+      </div>
+    </RootLayout>
+  );
 }

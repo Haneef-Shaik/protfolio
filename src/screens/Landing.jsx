@@ -16,8 +16,6 @@ export default function Landing() {
 
       image1.style.opacity = 1 - scrollPosition / window.innerHeight;
       // image2.style.opacity = scrollPosition / window.innerHeight;
-
-      // You can use the scrollPosition for any further actions you need.
     };
     if (scrollingDiv) {
       scrollingDiv.addEventListener("scroll", handleScroll);
