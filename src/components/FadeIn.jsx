@@ -23,6 +23,7 @@ export function FadeIn(props) {
         : {
             initial: 'hidden',
             whileInView: 'visible',
+            
             viewport,
           })}
       {...props}
