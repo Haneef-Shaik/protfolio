@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import haneef from "../assets/haneef.png"
-import { FadeIn } from "../components/FadeIn";
+import { FadeIn } from "../components/Fade";
 import styles from  "./Skills.module.css"
 import { CssSvg, HtmlSvg, IconBootstrap, IconExpress, IconMongodb, IconMysql, IconNextjs, IconNodeJs, IconReact, IconSass, IconTailwind, JsSvg, TsSvg } from "../components/SvgFiles";
 import { Tooltip } from "antd";
@@ -61,7 +61,7 @@ export default function Skills() {
       className:"text-white",
       icon:<IconNextjs  width="5.1rem" fill="#cccccc" className=" hover:fill-white rounded-lg"   />
     },
-    {id:10},
+    // {id:10},
     {
       id:11,
       name:"Node js",
@@ -90,20 +90,18 @@ export default function Skills() {
 
 
   return(
-  <div className="sticky w-full min-h-screen  bg-[#262626]  grid items-center justify-center py-6 xl:py-12">
+  <div className="sticky w-full min-h-screen grid items-center justify-center py-6 xl:py-12">
     <div className={`relative p-2 sm:p-4 md:p-6  text-white ${styles.neomorpichBoxOut} grid items-center justify-center rounded-3xl `}  >
     <div className={` min-w-[90vw] md:min-w-[80vw] p-6 text-white ${styles.neomorpichBox} rounded-xl`}  >
     <div className="relative h-full flex flex-col" >
-    <div className={`text-center text-3xl md:text-6xl font-bold  ${styles.heading}`} > Skills</div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 py-6 items-center place-content-center h-full" >
+    <div className={`text-center text-3xl md:text-6xl font-bold  ${styles.heading}`} >Tech Stack</div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 py-6 items-center place-content-center h-full" >
           {techStack?.map((o,i)=>{
             return (
-            <FadeIn key={i} className={`sticky ${o?.id ===10 ? "hidden md:block" : ""}`}>
-            <div className={`${styles.stackbox}  text-white grid gap-1 place-content-center text-center` }   >
-            <Tooltip placement="top" title={o?.name}  >
-            {o?.icon}
-            </Tooltip>
-            {/* <div className={`${styles?.stackname} ${o?.className}`} >{o?.name}</div> */}
+            <FadeIn key={i} className={` sticky hover:color-red-500 `}>
+            <div className={`${styles.stackbox} text-white grid gap-1 place-content-center text-center`}   >
+             <div className={`${styles.tech}`} >{o?.icon}</div> 
+            <div className={`${o?.className} ${styles.name} opacity-0 font-semibold`} >{o?.name}</div>
       </div>
             </FadeIn>)
           })}

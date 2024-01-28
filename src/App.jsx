@@ -4,6 +4,7 @@ import About from './screens/About'
 import Landing from './screens/Landing'
 import Progress from './screens/Progress'
 import Skills from './screens/Skills';
+import { RootLayout } from './components/RootLayout';
 
 function App() {
   const scrollRef = useRef(null);
@@ -32,12 +33,16 @@ function App() {
   //   };
   // }, []);
   return (
-    <div className='mainPage w-screen h-screen overflow-auto scrollbar-hide bg-[#262626]' ref={scrollRef}  >
-      <Landing/> 
-      <About />
+    <RootLayout>
+    <div className='mainPage w-screen h-screen overflow-auto scrollbar-hide !p-0' ref={scrollRef}  >
+      <Landing/>
+      <div className='' >
       <Skills />
+      </div> 
+      <About />
       <Progress />
     </div>
+    </RootLayout>
   
   )
 }

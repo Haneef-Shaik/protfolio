@@ -28,23 +28,39 @@
   }
 
   .heading{
-    color: #000;
-    background: -webkit-linear-gradient(0deg,#fff, #111);
+    color: #2563eb;
+    background: -webkit-linear-gradient(0deg,#2563eb, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    animation: headingAni 5000ms linear infinite reverse;
+  }
+.heading:hover {
+    animation: headingAni 5000ms ease-in infinite;
+}
+  
+
+  .tech:hover{
+    transform: scale(1.1);
+
   }
 
+  .tech:hover + .name {
+    opacity: 1;
+    /* transform: scale(1.2); */
+  }
+
+  .tech,.name{
+    transition: 1s;
+  }
 
   @keyframes headingAni {
     0% {
-      background: -webkit-linear-gradient(0deg,#fff, #ccc);
+      background: -webkit-linear-gradient(0deg,#2563eb, #ccc);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     
     }
     100% {
-      background: -webkit-linear-gradient(0deg,#ccc, #fff);
+      background: -webkit-linear-gradient(0deg,#ccc, #2563eb);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     

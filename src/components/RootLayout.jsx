@@ -38,7 +38,7 @@ function RootLayoutInner({ children }) {
           className="relative isolate flex w-full flex-col"
         >
           <GridPattern
-            className="absolute inset-x-0 -top-0 -z-10 h-full w-full fill-blue-500/50 stroke-blue-600/50 [mask-image:linear-gradient(to_bottom_left,white_45%,transparent_50%)]"
+            className="absolute inset-x-0 -top-0 -z-10 h-full w-full fill-blue-500/50 stroke-blue-600/50 "
             yOffset={-96}
             interactive
           />

@@ -3,11 +3,6 @@
     box-shadow: inset -5px 5px 10px #0f0f0f,
                 inset 5px -5px 10px #3d3d3d;
     color: white;
-    /* z-index: 1; */
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
   
   .card_rotator{
